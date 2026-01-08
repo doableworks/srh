@@ -42,8 +42,8 @@ export default function HomePage() {
 				<Fixtures />
 				<Standings />
 				<FanZone />
-				<Sponsors />
 				<Spotlight />
+				<Sponsors />
 			</main>
 			{/* Page Content ends here */}
 
