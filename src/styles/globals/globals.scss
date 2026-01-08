@@ -109,8 +109,14 @@ section {
 	font-weight: 500;
 	line-height: 13.947px; /* 77.482% */
 	letter-spacing: -0.18px;
+	transition: 0.2s ease-in-out;
 	font-family: var(--font_primary);
 	border: 2px solid var(--color_primary_light);
+	&:hover{
+		color: var(--color_black);
+		border: 2px solid var(--color_primary_tint);
+		background-color: var(--color_white);
+	}
 }
 
 .sectionTitle{
