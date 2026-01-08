@@ -12,12 +12,23 @@
     .bannerInfo{
         left: 0;
         z-index: 1;
-        width: 100%;
+        width: 94%;
         bottom: 50px;
         position: absolute;
         h2{
-           width: 600px;
+            width: 600px;
+            background: linear-gradient(101deg, #FFF 55.65%, #999 92.28%);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
+    }
+    .bannerDownArrow{
+        right: 0;
+        z-index: 1;
+        width: 14px;
+        bottom: 50px;
+        position: absolute;
     }
     .overlay{
 		width: 100%;

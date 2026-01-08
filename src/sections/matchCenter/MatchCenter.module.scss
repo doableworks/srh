@@ -1,0 +1,8 @@
+@use "@/styles/helpers/helpers.scss" as *;
+
+.MatchCenter {
+    position: relative;
+    .matchCenterImage{
+        width: 100%;
+    }
+}
