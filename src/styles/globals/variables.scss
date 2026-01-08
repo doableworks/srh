@@ -1,0 +1,43 @@
+$browser-prefixes: false !default;
+
+:root {
+	// Fonts
+	--font_title: "BURST-SPEED";
+	--font_primary: "FormaDJRMicro-Medium";
+	--font_secondary: "VTFRedzone-Classic";
+
+	// Primary colors
+	--color_primary_tint: #FF4B03;
+	
+	--color_primary_light: #e9cf72;
+	--color_primary: #e2c044;
+	--color_primary_shade: #deb72b;
+	--color_primary_dark: #c29f1e;
+	--color_primary_deep: #9f8219;
+	--color_primary_contrast: #000000;
+	// Secondary colors
+	// Secondary colors
+	--color_black: #000000;
+	--color_white: #ffffff;
+
+	// Extras
+	--container_width: 100%;
+	--container_left_space: calc((100% - var(--container_width)) / 2);
+	--transition: ease all 300ms;
+
+	@media (min-width: 768px) and (max-width: 991px) {
+		--container_width: 750px;
+	}
+
+	@media (min-width: 992px) and (max-width: 1199px) {
+		--container_width: 970px;
+	}
+
+	@media (min-width: 1200px) {
+		--container_width: 1170px;
+	}
+
+	// @media (min-width: 1401px) {
+	//   --container_width: 1360px;
+	// }
+}

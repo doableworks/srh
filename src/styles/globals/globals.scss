@@ -1,0 +1,128 @@
+@use "./index.scss" as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+body {
+	margin: 0;
+	@extend .text_reg;
+	font-family: var(--font_primary);
+
+	@include sm-down {
+		font-size: 10px;
+	}
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: normal;
+}
+
+img {
+	max-width: 100%;
+	display: block;
+	height: auto;
+}
+
+picture,
+video {
+	display: block !important;
+}
+
+section {
+	position: relative;
+}
+
+.container-fluid {
+	width: 100%;
+	position: relative;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.container {
+	@extend .container-fluid;
+	margin: 0 auto;
+	width: var(--container_width);
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: -15px;
+	margin-right: -15px;
+}
+
+.text_center {
+	text-align: center;
+}
+
+.text_uppercase {
+	text-transform: uppercase;
+}
+
+.text_italic {
+	font-style: italic;
+}
+
+.section_spacing {
+	padding: 10vmin 0;
+}
+
+// Classes for fonts
+.font_primary {
+	font-family: var(--font_primary);
+}
+
+.font_secondary {
+	font-family: var(--font_secondary);
+}
+
+.objectFitCover {
+	img {
+		object-fit: cover !important;
+	}
+}
+
+.pagePadd{
+	padding-top: 60px;
+}
+
+.primaryBtn{
+	background-color: var(--color_primary_tint);
+}
+
+.sectionTitle{
+	font-size: 116.845px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: 97px; /* 83.016% */
+	letter-spacing: 2.337px;
+	
+	background: linear-gradient(101deg, #FFF 55.65%, #999 92.28%);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family: var(--font_title);
+}
+
+.smallTitle{
+	color: #FFF;
+	font-size: 22px;
+	font-style: normal;
+	font-weight: 500;
+	line-height: 26px; /* 118.182% */
+	text-transform: uppercase;
+	font-family: var(--font_primary);
+}
