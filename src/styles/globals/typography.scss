@@ -534,7 +534,14 @@ $sizes: 300, 400, 500, 600, 700, 800, 900;
 .hidden_md {
 	display: block;
 
-	@media (max-width: 991px) {
+	@media (max-width: 1200px) {
+		display: none !important;
+	}
+}
+.visible_md {
+	display: block;
+
+	@media (min-width: 1200px) {
 		display: none !important;
 	}
 }

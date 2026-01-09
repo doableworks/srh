@@ -13,6 +13,7 @@ import styles from "./TopBanner.module.scss";
 
 // IMAGES //
 import dekstopBanner from "@/../public/img/home/dekstopBanner.jpg";
+import mobileBanner from "@/../public/img/home/mobileBanner.jpg";
 import bannerDownArrow from "@/../public/img/home/bannerDownArrow.svg";
 
 // DATA //
@@ -21,10 +22,19 @@ import bannerDownArrow from "@/../public/img/home/bannerDownArrow.svg";
 export default function TopBanner() {
 	return (
 		<div className={styles.TopBanner}>
-			<img
+			<picture>
+				<source srcSet={mobileBanner.src} media="(max-width:992px)" />
+				<img
+					src={dekstopBanner.src}
+					alt="dekstopBanner"
+					className="img-responsive"
+					loading="lazy"
+				/>
+			</picture>
+			{/* <img
 				src={dekstopBanner.src}
 				className={`${styles.bannerImg} img-responsive`}
-			/>
+			/> */}
 			<div className="container">
 				<img
 					src={bannerDownArrow.src}

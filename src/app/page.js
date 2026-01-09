@@ -38,13 +38,25 @@ export default function HomePage() {
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage} pagePadd`}>
 				<TopBanner />
-				<MatchCenter />
+				<div id="tickets">
+					<MatchCenter />
+				</div>
 				<MatchNews />
-				<Squad />
-				<Fixtures />
-				<Standings />
-				<FanZone />
-				<Spotlight />
+				<div id="squad">
+					<Squad />
+				</div>
+				<div id="fixtures">
+					<Fixtures />
+				</div>
+				<div id="standings">
+					<Standings />
+				</div>
+				<div id="fanZone">
+					<FanZone />
+				</div>
+				<div id="spotlight">
+					<Spotlight />
+				</div>
 				<Sponsors />
 			</main>
 			{/* Page Content ends here */}

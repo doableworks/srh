@@ -2,12 +2,19 @@
 
 .TopBanner {
     width: 100%;
+    overflow: hidden;
     position: relative;
     height: calc(100vh - 60px);
-    .bannerImg{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
+    picture{
+        height: calc(100vh - 60px);
+        img{
+            width: 100%;
+            height: calc(100vh - 60px);
+            object-fit: cover;
+            transform: scale(1);
+            animation-delay: 0.3s; 
+            animation: scaleIn 0.6s ease-out forwards;
+        }
     }
     .bannerInfo{
         left: 0;
@@ -15,12 +22,27 @@
         width: 94%;
         bottom: 50px;
         position: absolute;
+        animation-delay: 0.3s; 
+        animation: slideUp 0.6s ease-out forwards;
+        @media screen and (max-width: 767px) {
+            padding: 15px;
+        }
         h2{
             width: 600px;
             background: linear-gradient(101deg, #FFF 55.65%, #999 92.28%);
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+        }
+        .title_btn{
+            @media screen and (max-width: 767px) {
+                flex-wrap: wrap;
+            }  
+            h6{
+                @media screen and (max-width: 767px) {
+                    padding-bottom: 10px;                         
+                }
+            }
         }
     }
     .bannerDownArrow{
@@ -29,6 +51,27 @@
         width: 14px;
         bottom: 50px;
         position: absolute;
+        @media screen and (max-width: 767px) {
+            right: 15px;
+        }
+    }
+    @keyframes slideUp {
+        from {
+            opacity: 0;
+            bottom: 0;
+        }
+        to {
+            bottom: 50px;
+            opacity: 1;
+        }
+    }
+    @keyframes scaleIn {
+        from {
+             transform: scale(1.1);
+        }
+        to {
+            transform: scale(1);
+        }
     }
     .overlay{
 		width: 100%;

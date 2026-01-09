@@ -9,6 +9,16 @@ import Link from "next/link";
 // SECTIONS //
 
 // PLUGINS //
+import * as Scroll from "react-scroll";
+import {
+	Link as ScrollSection,
+	// Button,
+	Element,
+	Events,
+	animateScroll as scroll,
+	scrollSpy,
+	scroller,
+} from "react-scroll";
 
 // UTILS //
 
@@ -54,38 +64,134 @@ export default function Header() {
 					{/* Links Wrap */}
 					<div className={`${styles.links_wrap}`}>
 						<div className={styles.links}>
-							<Link href="">
-								<div className={styles.link_title}>tickets</div>
-							</Link>
+							<ScrollSection
+								activeClass={styles.active}
+								to="tickets"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								onClick={toggleSidebar}
+								className={styles.link_title}
+							>
+								tickets
+							</ScrollSection>
 						</div>
 						<div className={styles.links}>
-							<Link href="">
-								<div className={styles.link_title}>Squad</div>
-							</Link>
+							<ScrollSection
+								activeClass={styles.active}
+								to="squad"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								onClick={toggleSidebar}
+								className={styles.link_title}
+							>
+								Squad
+							</ScrollSection>
 						</div>
 						<div className={styles.links}>
-							<Link href="">
-								<div className={styles.link_title}>Fixtures</div>
-							</Link>
+							<ScrollSection
+								activeClass={styles.active}
+								to="fixtures"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								onClick={toggleSidebar}
+								className={styles.link_title}
+							>
+								Fixtures
+							</ScrollSection>
+						</div>
+						<div className={`${styles.links} visible_md`}>
+							<ScrollSection
+								activeClass={styles.active}
+								to="standings"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								onClick={toggleSidebar}
+								className={styles.link_title}
+							>
+								Standings
+							</ScrollSection>
+						</div>
+						<div className={`${styles.links} visible_md`}>
+							<ScrollSection
+								activeClass={styles.active}
+								to="fanZone"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								onClick={toggleSidebar}
+								className={styles.link_title}
+							>
+								Fan zone
+							</ScrollSection>
+						</div>
+						<div className={`${styles.links} visible_md`}>
+							<ScrollSection
+								activeClass={styles.active}
+								to="spotlight"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								onClick={toggleSidebar}
+								className={styles.link_title}
+							>
+								Spotlight
+							</ScrollSection>
 						</div>
 					</div>
 
 					{/* Links Wrap */}
-					<div className={`${styles.links_wrap}`}>
+					<div className={`${styles.links_wrap} hidden_xs`}>
 						<div className={styles.links}>
-							<Link href="">
-								<div className={styles.link_title}>Standings</div>
-							</Link>
+							<ScrollSection
+								activeClass={styles.active}
+								to="standings"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								onClick={toggleSidebar}
+								className={styles.link_title}
+							>
+								Standings
+							</ScrollSection>
 						</div>
 						<div className={styles.links}>
-							<Link href="">
-								<div className={styles.link_title}>Fan zone</div>
-							</Link>
+							<ScrollSection
+								activeClass={styles.active}
+								to="fanZone"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								onClick={toggleSidebar}
+								className={styles.link_title}
+							>
+								Fan zone
+							</ScrollSection>
 						</div>
 						<div className={styles.links}>
-							<Link href="">
-								<div className={styles.link_title}>Spotlight</div>
-							</Link>
+							<ScrollSection
+								activeClass={styles.active}
+								to="spotlight"
+								spy={true}
+								smooth={true}
+								offset={0}
+								duration={500}
+								onClick={toggleSidebar}
+								className={styles.link_title}
+							>
+								Spotlight
+							</ScrollSection>
 						</div>
 					</div>
 

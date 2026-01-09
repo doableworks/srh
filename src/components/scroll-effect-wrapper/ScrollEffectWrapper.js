@@ -31,7 +31,7 @@ export default function ScrollEffectWrapper({ children }) {
 	/** Handle functions on pathname changes */
 	useEffect(() => {
 		// Initialize ScrollOut animations
-		const scrollOutFade = ScrollOut({ targets: ".fadeInUp", once: true });
+		const scrollOutFade = ScrollOut({ targets: ".fadeInUp", once: false });
 
 		return () => {
 			scrollOutFade.teardown();

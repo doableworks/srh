@@ -64,6 +64,23 @@ section {
 	margin-right: -15px;
 }
 
+//scroll out
+.fadeInUp {
+	&[data-scroll] {
+		transition: all 0.7s ease-out;
+	}
+
+	&[data-scroll="in"] {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+	&[data-scroll="out"] {
+		opacity: 0;
+		transform: translateY(100px);
+	}
+}
+
 .text_center {
 	text-align: center;
 }
@@ -126,6 +143,10 @@ section {
 	line-height: 97px; /* 83.016% */
 	letter-spacing: 2.337px;
 	font-family: var(--font_title);
+	@media screen and (max-width: 767px) {
+		font-size: 70px;
+		line-height: 60px;
+	}
 }
 
 .black{
@@ -140,6 +161,10 @@ section {
 	line-height: 26px; /* 118.182% */
 	text-transform: uppercase;
 	font-family: var(--font_d_r);
+	@media screen and (max-width: 767px) {
+		font-size: 18px;
+		line-height: 22px;
+	}
 }
 
 .sectionOverlay{
@@ -168,5 +193,11 @@ section {
 		border: 1.373px solid #FFCEA9;
 		background: linear-gradient(73deg, #FF4B03 54.59%, #FDB033 108.76%);
 		backdrop-filter: blur(8.533387184143066px);
+
+		@media screen and (max-width: 767px) {
+            font-size: 20px;
+			line-height: 18px;
+			padding: 10px 25px 10px;
+        }
 	}
 }

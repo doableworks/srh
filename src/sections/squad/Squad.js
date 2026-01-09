@@ -235,11 +235,22 @@ export default function Squad() {
 				className={`${styles.rightArrow} img-responsive`}
 			/>
 			<div className="container">
-				<h2 className="sectionTitle text_center color_white m_b_5">BORN OF FIRE</h2>
-				<h6 className="smallTitle f_w_r text_center color_white pb_60">
+				<h2
+					className="sectionTitle text_center color_white m_b_5 fadeInUp"
+					data-scroll
+				>
+					BORN OF FIRE
+				</h2>
+				<h6
+					className="smallTitle f_w_r text_center color_white pb_60 fadeInUp"
+					data-scroll
+				>
 					New risers, new colours, new firepower
 				</h6>
-				<div className={`${styles.tabSection} f_r_aj_center pb_60`}>
+				<div
+					className={`${styles.tabSection} f_r_aj_center pb_60 fadeInUp`}
+					data-scroll
+				>
 					<div className={`${styles.filterMW}`}>
 						<ul>
 							<li
@@ -338,7 +349,7 @@ export default function Squad() {
 				})}
 			</Slider>
 
-			<div className="pt_70 text_center">
+			<div className="pt_70 text_center fadeInUp" data-scroll>
 				<a href="" className="primaryBtn">
 					Rising Squad
 				</a>

@@ -18,8 +18,16 @@
     h6{
         text-transform: capitalize;
     }
+    h2{
+        @media screen and (max-width: 767px) {
+            padding-top: 100px;
+        }
+    }
     .tabSection{
         grid-gap: 16px;
+        @media screen and (max-width: 767px) {
+            flex-wrap: wrap;
+        }
         .filterMW{
             padding: 5px;
             border-radius: 6px;
@@ -40,6 +48,9 @@
                     line-height: 16px; /* 88.889% */
                     padding: 10px 30px 7px 30px;
 	                transition: 0.3s ease-in-out;
+                    @media screen and (max-width: 767px) {
+                        padding: 8px 20px 5px 20px;
+                    }
                     &.active{
                         border-radius: 6px;
                         color: var(--color_primary_tint);
@@ -90,7 +101,7 @@
 			margin: 0 20px;
 			@media (max-width: 767px) {
 				margin: 0 10px;
-				width: 280px !important;
+				width: 290px !important;
 			}
 			@media (min-width: 993px) and (max-width: 1200px) {
 				width: 330px !important;
@@ -110,6 +121,10 @@
                     margin-top: -70px;
                     margin-left: -60px;
                     position: relative;
+                    @media screen and (max-width: 767px) {
+                        margin-left: -40px;
+                        margin-top: -50px;
+                    }
                     h4{
                         color: #FFF;
                         text-align: center;
@@ -119,6 +134,10 @@
                         line-height: 47.806px; /* 81.538% */
                         text-transform: uppercase;
                         font-family: var(--font_secondary);
+                        @media screen and (max-width: 767px) {
+                            font-size: 40px;
+                            line-height: 36px;
+                        }
                     }
                 }
                 .jerseyMatch{
@@ -210,6 +229,9 @@
                         bottom: 0;
                         z-index: 1;
                         position: absolute;
+                        @media screen and (max-width: 767px) {
+                            bottom: -5px;
+                        }
                     }
                 }
 			}

@@ -13,6 +13,9 @@
 	}
 	.topFooter{
 		padding: 0 100px 20px 100px;
+		@media screen and (max-width: 767px) {
+			padding: 0 0 20px 0;
+		}
 		.Newsletter{
 			h5{
 				color: #F5F7F8;
@@ -76,14 +79,27 @@
 		padding: 20px 100px;
 		border-top: 2px solid #f3b28475;
 		border-bottom: 2px solid #f3b28475;
+		@media screen and (max-width: 767px) {
+			padding: 20px 0;
+			flex-wrap: wrap;
+		}
 		p{
 			font-size: 20px;
 			font-style: normal;
 			font-weight: 300;
 			line-height: 26px; 
 			color: var(--Off-White, #F5F7F8);
+			@media screen and (max-width: 767px) {
+				width: 100%;
+				text-align: center;
+			}
 		}
 		.socialMedia{
+			@media screen and (max-width: 767px) {
+				width: 100%;
+				text-align: center;
+				padding: 15px 0;
+			}
 			ul{
 				padding-left: 0;
 				list-style: none;

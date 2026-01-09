@@ -19,7 +19,7 @@ import fixturesBg from "@/../public/img/home/fixturesBg.jpg";
 /** Fixtures Section */
 export default function Fixtures() {
 	return (
-		<div className={`${styles.Fixtures} pb_10`}>
+		<div className={`${styles.Fixtures} pt_100 pb_10`}>
 			<div className="container">
 				<img
 					src={fixturesBg.src}

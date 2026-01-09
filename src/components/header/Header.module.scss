@@ -9,10 +9,23 @@
 	height: 60px;
 	border-bottom: 2px solid #FFC9B4;
 	background: linear-gradient(90deg, #FF4B03 0%, #FF7D19 50%, #FF4B03 100%);
+	transform: translateY(0%);
+	animation-delay: 0.2s;
+	animation: slideUp 0.6s ease-out forwards;
+
+	@keyframes slideUp {
+		from {
+			transform: translateY(-100%);
+		}
+		to {
+			transform: translateY(0%);
+		}
+	}
 
 	.image_wrap {
 		top: 5px;
 		left: 50%;
+		z-index: 10;
 		position: absolute;
 		transform: translateX(-50%);
 	}
@@ -25,6 +38,7 @@
 			@extend %d_flex;
 			align-self: stretch;
 			padding-inline-start: 0;
+			
 			// The menu is transformed as per sidebar on click of hamburger icon
 			@include sm-down {
 				padding-top: 5%;
@@ -37,6 +51,7 @@
 				top: 100%;
 				left: 0;
 				height: 100vh;
+				background: linear-gradient(90deg, #FF4B03 0%, #FF7D19 50%, #FF4B03 100%);
 			}
 			.links {
 				@extend %relative_box;

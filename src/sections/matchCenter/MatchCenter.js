@@ -23,7 +23,8 @@ export default function MatchCenter() {
 			<img
 				src={matchCenter.src}
 				alt="matchCenter"
-				className={`${styles.matchCenterImage} img-responsive`}
+				className={`${styles.matchCenterImage} img-responsive fadeInUp`}
+				data-scroll
 			/>
 			<div className="sectionOverlay">
 				<div className="comingSoonBtn">Coming Soon</div>
