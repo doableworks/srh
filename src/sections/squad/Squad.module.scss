@@ -1,4 +1,250 @@
 @use "@/styles/helpers/helpers.scss" as *;
 
 .Squad {
+    position: relative;
+    background-color: #000;
+    .leftLight {
+		top: 0;
+		left: 0;
+		position: absolute;
+		mix-blend-mode: screen;
+	}
+	.rightArrow {
+		top: 0;
+		right: 0;
+		position: absolute;
+		mix-blend-mode: screen;
+	}
+    h6{
+        text-transform: capitalize;
+    }
+    .tabSection{
+        grid-gap: 16px;
+        .filterMW{
+            padding: 5px;
+            border-radius: 6px;
+            display: inline-block;
+            background-color: var(--color_primary_tint);
+            border: 1px solid var(--color_primary_light);
+            ul{
+                list-style: none;
+                display: flex;
+                grid-gap: 5px;
+                padding-left: 0;
+                li{
+                    cursor: pointer;
+                    color: #FFF;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 16px; /* 88.889% */
+                    padding: 10px 30px 7px 30px;
+	                transition: 0.3s ease-in-out;
+                    &.active{
+                        border-radius: 6px;
+                        color: var(--color_primary_tint);
+                        background-color: var(--color_white);
+                    }
+                }
+            }
+        }
+        .filterYear {
+	position: relative;
+	display: inline-block;
+
+	select {
+		cursor: pointer;
+		border-radius: 6px;
+		display: inline-block;
+		background-color: var(--color_primary_tint);
+		border: 1px solid var(--color_primary_light);
+		color: #fff;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 16px;
+		padding: 11px 48px 11px 15px; // right padding arrow ke liye
+		width: 100%;
+
+		// REMOVE default arrow
+		appearance: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+
+		// CUSTOM ARROW
+		background-image: url("/img/home/yearArrow.svg");
+		background-repeat: no-repeat;
+		background-position: right 16px center;
+		background-size: 14px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    }
+    .strikes_slider {
+		.slider_item_wrapper {
+			width: 310px !important;
+			margin: 0 20px;
+			@media (max-width: 767px) {
+				margin: 0 10px;
+				width: 280px !important;
+			}
+			@media (min-width: 993px) and (max-width: 1200px) {
+				width: 330px !important;
+			}
+			@media (min-width: 1681px) and (max-width: 1920px) {
+				width: 300px !important;
+			}
+			.slider_item {
+				width: 100%;
+				position: relative;
+				.squadInnerBg {
+					width: 100%;
+				}
+                
+                .playerName{
+                    z-index: 2;
+                    margin-top: -70px;
+                    margin-left: -60px;
+                    position: relative;
+                    h4{
+                        color: #FFF;
+                        text-align: center;
+                        font-size: 58.63px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 47.806px; /* 81.538% */
+                        text-transform: uppercase;
+                        font-family: var(--font_secondary);
+                    }
+                }
+                .jerseyMatch{
+                    top: 15px;
+                    left: 0;
+                    width: 70%;
+                    left: 53%;
+                    transform: translateX(-50%);
+                    position: absolute;
+                    display: flex;
+                    grid-gap: 10px;
+                    .jersey{
+                        width: 49%;
+                        .position{
+                            color: #FF4C04;
+                            font-size: 23.208px;
+                            font-style: normal;
+                            font-weight: 400;
+                            width: 38px;
+                            height: 38px;
+                            display: flex;
+                            border-radius: 100%;
+                            align-items: center;
+                            line-height: 18.923px;
+                            justify-content: center;
+                            text-transform: uppercase;
+                            font-family: var(--font_secondary);
+                            background-color: var(--color_white);
+                            margin: 0 0 12px 10px;
+                        }
+                        h5{
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 14.432px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            text-transform: uppercase;
+                        }
+                        .number{
+                            color: #FFF;
+                            text-align: center;
+                            font-size: 90.2px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 65px; /* 100% */
+                            text-transform: uppercase;
+                            font-family: var(--font_secondary);
+                        }
+                    }
+                    .match{
+                        width: 49%;
+                        padding-right: 30px;
+                        .matchs{
+                            padding: 0 4px;
+                            color: #FFF;
+                            font-size: 14.432px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            text-transform: uppercase;
+                        }
+                        .matchsDtails{
+                            color: #FFF;
+                            padding: 6px 4px;
+                            margin-bottom: 6px;
+                            font-size: 16.236px;
+                            font-style: normal;
+                            font-weight: 600;
+                            letter-spacing: 1;
+                            line-height: normal;
+                            text-transform: uppercase;
+                            border-bottom: 1px solid #fff;
+                            &:last-child{
+                                border-bottom: 0;
+                            }
+                        }
+                    }
+                }
+
+                .playerImage{
+                    left: 50%;
+                    bottom: 27px;
+                    width: 100%;
+                    position: absolute;
+                    transform: translateX(-50%);
+                    .squadGbBottom{
+                        left: 0;
+                        bottom: 0;
+                        z-index: 1;
+                        position: absolute;
+                    }
+                }
+			}
+		}
+		:global(.slick-slide) {
+			opacity: 0.5;
+			transition: opacity 0.5s ease;
+		}
+		:global(.slick-track) {
+			display: flex;
+		}
+		:global(.slick-center) {
+			opacity: 1;
+		}
+	}
+    .customNext {
+		top: 50%;
+		z-index: 1;
+		cursor: pointer;
+		position: absolute;
+		transform: translateY(-50%);
+		right: var(--container_left_space);
+		@media (max-width: 767px) {
+			padding-right: 10px;
+		}
+	}
+	.customPrev {
+		top: 50%;
+		z-index: 1;
+		cursor: pointer;
+		position: absolute;
+		transform: translateY(-50%);
+		left: var(--container_left_space);
+		@media (max-width: 767px) {
+			padding-left: 10px;
+		}
+	}
 }

@@ -11,6 +11,8 @@ import ScrollEffectWrapper from "@/components/scroll-effect-wrapper/ScrollEffect
 
 // STYLES //
 import "@/styles/globals/globals.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 // IMAGES //
 

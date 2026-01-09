@@ -101,7 +101,7 @@ section {
 
 .primaryBtn{
 	border-radius: 100px;
-	padding: 14px 40px 11px 40px;
+	padding: 9px 40px 11px 40px;
 	background-color: var(--color_primary_tint);
 	color: #FFF;
 	font-size: 18px;
@@ -110,7 +110,7 @@ section {
 	line-height: 13.947px; /* 77.482% */
 	letter-spacing: -0.18px;
 	transition: 0.3s ease-in-out;
-	font-family: var(--font_primary);
+	font-family: var(--font_secondary);
 	border: 2px solid var(--color_primary_light);
 	&:hover{
 		color: var(--color_black);
@@ -139,7 +139,7 @@ section {
 	font-weight: 500;
 	line-height: 26px; /* 118.182% */
 	text-transform: uppercase;
-	font-family: var(--font_primary);
+	font-family: var(--font_d_r);
 }
 
 .sectionOverlay{

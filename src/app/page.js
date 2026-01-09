@@ -9,6 +9,7 @@ import MatchCenter from "@/sections/matchCenter/MatchCenter";
 import MatchNews from "@/sections/matchNews/MatchNews";
 import Sponsors from "@/sections/sponsors/Sponsors";
 import Spotlight from "@/sections/spotlight/Spotlight";
+import Squad from "@/sections/squad/Squad";
 import Standings from "@/sections/standings/Standings";
 
 // SECTIONS //
@@ -39,6 +40,7 @@ export default function HomePage() {
 				<TopBanner />
 				<MatchCenter />
 				<MatchNews />
+				<Squad />
 				<Fixtures />
 				<Standings />
 				<FanZone />

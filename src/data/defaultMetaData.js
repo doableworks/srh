@@ -4,7 +4,7 @@ import favicon from "public/img/favicon.png";
 
 const defaultMetaData = [
 	{
-		title: "Project title",
+		title: "SRH",
 		description: "Project description",
 		ogImage: ogImage,
 		icon: favicon,
