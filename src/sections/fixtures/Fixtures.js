@@ -24,7 +24,8 @@ export default function Fixtures() {
 				<img
 					src={fixturesBg.src}
 					alt="matchCenter"
-					className={`${styles.matchCenterImage} img-responsive`}
+					className={`${styles.matchCenterImage} img-responsive fadeInUp`}
+					data-scroll
 				/>
 			</div>
 			<div className="sectionOverlay">
