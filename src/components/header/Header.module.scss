@@ -2,7 +2,7 @@
 
 .main_header {
 	@extend %f_r_aj_center;
-	position: fixed;
+	position: relative;
 	width: 100%;
 	z-index: 20;
 	top: 0;

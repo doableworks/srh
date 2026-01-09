@@ -24,6 +24,7 @@ import rightArrow from "@/../public/img/home/rightLight.png";
 import squadGbBottom from "@/../public/img/home/squadGbBottom.png";
 import liam from "@/../public/img/home/liam.png";
 import hannam from "@/../public/img/home/hannam.png";
+import squadBG from "@/../public/img/home/squadBG.png";
 
 // DATA //
 
@@ -227,6 +228,11 @@ export default function Squad() {
 	});
 	return (
 		<div className={`${styles.Squad} ptb_100`}>
+			<img
+				src={squadBG.src}
+				alt="squadBG"
+				className={`${styles.squadBG} img-responsive`}
+			/>
 			<img
 				src={leftLight.src}
 				alt="leftLight"

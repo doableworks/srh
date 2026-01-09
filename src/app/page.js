@@ -36,7 +36,7 @@ export default function HomePage() {
 			<Header />
 
 			{/* Page Content starts here */}
-			<main className={`${styles.HomePage} pagePadd`}>
+			<main className={`${styles.HomePage}`}>
 				<TopBanner />
 				<div id="tickets">
 					<MatchCenter />

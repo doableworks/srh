@@ -2,7 +2,15 @@
 
 .Squad {
     position: relative;
-    background-color: #000;
+    background: radial-gradient(168.89% 156.84% at 52.12% -10.43%, #FF4B03 0%, #FF9645 100%);
+    .squadBG{
+        top: 0;
+        left: 50%;
+        opacity: 1;
+mix-blend-mode: overlay;
+        position: absolute;
+        transform: translateX(-50%);
+    }
     .leftLight {
 		top: 0;
 		left: 0;
