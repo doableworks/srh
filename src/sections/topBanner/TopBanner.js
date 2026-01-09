@@ -1,3 +1,4 @@
+"use client";
 // MODULES //
 
 // COMPONENTS //
@@ -47,7 +48,14 @@ export default function TopBanner() {
 					<div className={`${styles.title_btn} f_r_aj_between`}>
 						<h6 className="smallTitle">BRINGING THE FIRE TO HEADINGLEY</h6>
 						{/* <div className={`${styles.btn_section}`}> */}
-						<a href="" className="primaryBtn">
+						<a
+							href=""
+							onClick={(e) => {
+								e.preventDefault();
+								alert("Coming Soon");
+							}}
+							className="primaryBtn"
+						>
 							Get Tickets
 						</a>
 						{/* </div> */}

@@ -19,13 +19,15 @@ import matchCenter from "@/../public/img/home/news.jpg";
 /** Matchnews Section */
 export default function MatchNews() {
 	return (
-		<div className={styles.MatchNews}>
-			<img
-				src={matchCenter.src}
-				alt="matchCenter"
-				className={`${styles.matchCenterImage} img-responsive fadeInUp`}
-				data-scroll
-			/>
+		<div className={`${styles.MatchNews} pt_50 pb_100`}>
+			<div className="container">
+				<img
+					src={matchCenter.src}
+					alt="matchCenter"
+					className={`${styles.matchCenterImage} img-responsive fadeInUp`}
+					data-scroll
+				/>
+			</div>
 			<div className="sectionOverlay">
 				<div className="comingSoonBtn">Coming Soon</div>
 			</div>

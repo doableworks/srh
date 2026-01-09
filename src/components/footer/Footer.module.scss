@@ -32,6 +32,7 @@
 					border-radius: 40px;
 					display: flex;
 					align-items: center;
+					position: relative;
 					// padding: 6px;
 					input {
 						flex: 1;
@@ -43,6 +44,13 @@
 						padding: 0 24px;
 						font-size: 16px;
 						color: #000;
+					}
+					.success{
+						left: 0;
+						bottom: -50px;
+						color: #fff;
+						line-height: 20px;
+						position: absolute;
 					}
 					button {
 						height: 100%;

@@ -84,6 +84,7 @@ export default function Squad() {
 			totlaAverage: "71.36",
 			men: true,
 			women: false,
+			coachingStaff: true,
 			year: "2025",
 		},
 		{
@@ -99,6 +100,7 @@ export default function Squad() {
 			men: true,
 			women: false,
 			year: "2025",
+			coachingStaff: false,
 		},
 		{
 			id: 3,
@@ -113,6 +115,7 @@ export default function Squad() {
 			men: true,
 			women: false,
 			year: "2025",
+			coachingStaff: false,
 		},
 		{
 			id: 4,
@@ -126,6 +129,7 @@ export default function Squad() {
 			totlaAverage: "71.36",
 			men: true,
 			women: false,
+			coachingStaff: true,
 			year: "2025",
 		},
 		{
@@ -141,6 +145,7 @@ export default function Squad() {
 			men: true,
 			women: false,
 			year: "2025",
+			coachingStaff: false,
 		},
 		{
 			id: 1,
@@ -155,6 +160,7 @@ export default function Squad() {
 			men: false,
 			women: true,
 			year: "2026",
+			coachingStaff: false,
 		},
 		{
 			id: 2,
@@ -169,6 +175,7 @@ export default function Squad() {
 			men: false,
 			women: true,
 			year: "2026",
+			coachingStaff: false,
 		},
 		{
 			id: 3,
@@ -182,6 +189,7 @@ export default function Squad() {
 			totlaAverage: "71.36",
 			men: false,
 			women: true,
+			coachingStaff: true,
 			year: "2026",
 		},
 		{
@@ -197,6 +205,7 @@ export default function Squad() {
 			men: false,
 			women: true,
 			year: "2026",
+			coachingStaff: false,
 		},
 		{
 			id: 5,
@@ -211,6 +220,7 @@ export default function Squad() {
 			men: false,
 			women: true,
 			year: "2024",
+			coachingStaff: true,
 		},
 	];
 
@@ -220,6 +230,7 @@ export default function Squad() {
 		// Gender filter
 		if (genderFilter === "men" && !item?.men) return false;
 		if (genderFilter === "women" && !item?.women) return false;
+		if (genderFilter === "coachingStaff" && !item?.coachingStaff) return false;
 
 		// Year filter
 		if (yearFilter && item?.year !== yearFilter) return false;
@@ -279,6 +290,12 @@ export default function Squad() {
 								onClick={() => setGenderFilter("women")}
 							>
 								Women
+							</li>
+							<li
+								className={genderFilter === "coachingStaff" ? styles.active : ""}
+								onClick={() => setGenderFilter("coachingStaff")}
+							>
+								Coaching Staff
 							</li>
 						</ul>
 					</div>
