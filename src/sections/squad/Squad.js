@@ -1,6 +1,6 @@
 "use client";
 // MODULES //
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef } from "react";
 
 // COMPONENTS //
 
@@ -32,7 +32,7 @@ export default function Squad() {
 	const [genderFilter, setGenderFilter] = useState("all");
 	const [yearFilter, setYearFilter] = useState("");
 
-	const sliderRef = useRef(null);
+	/** customNext */
 	const NextArrow = ({ onClick }) => {
 		return (
 			<div className={`${styles.customNext}`} onClick={onClick}>
@@ -41,6 +41,7 @@ export default function Squad() {
 		);
 	};
 
+	/** customPrev */
 	const PrevArrow = ({ onClick }) => {
 		return (
 			<div className={`${styles.customPrev}`} onClick={onClick}>
@@ -48,6 +49,8 @@ export default function Squad() {
 			</div>
 		);
 	};
+	const sliderRef = useRef(null);
+
 	const settings = {
 		centerMode: true,
 		infinite: true,
@@ -210,15 +213,15 @@ export default function Squad() {
 		},
 	];
 
-	const years = [...new Set(playersData.map((item) => item.year))];
+	const years = [...new Set(playersData?.map((item) => item?.year))];
 
-	const filteredPlayers = playersData.filter((item) => {
+	const filteredPlayers = playersData?.filter((item) => {
 		// Gender filter
-		if (genderFilter === "men" && !item.men) return false;
-		if (genderFilter === "women" && !item.women) return false;
+		if (genderFilter === "men" && !item?.men) return false;
+		if (genderFilter === "women" && !item?.women) return false;
 
 		// Year filter
-		if (yearFilter && item.year !== yearFilter) return false;
+		if (yearFilter && item?.year !== yearFilter) return false;
 
 		return true;
 	});
@@ -280,7 +283,7 @@ export default function Squad() {
 							onChange={(e) => setYearFilter(e.target.value)}
 						>
 							<option value="">All Years Squad</option>
-							{years.map((year, i) => (
+							{years?.map((year, i) => (
 								<option key={i} value={year}>
 									{year} Squad
 								</option>
@@ -296,7 +299,7 @@ export default function Squad() {
 				className={`${styles.strikes_slider} fadeInUp`}
 				data-scroll
 			>
-				{filteredPlayers.map((item, ind) => {
+				{filteredPlayers?.map((item, ind) => {
 					return (
 						<div className={`${styles.slider_item_wrapper}`} key={ind}>
 							<div className={`${styles.slider_item}`}>
@@ -306,10 +309,10 @@ export default function Squad() {
 									className={`${styles.itemBg} img-responsive`}
 								/>
 								<div className={`${styles.playerName}`}>
-									<h4 className="color_white text_center">{parse(item.playerName)}</h4>
+									<h4 className="color_white text_center">{parse(item?.playerName)}</h4>
 								</div>
 								<div className={`${styles.playerImage}`}>
-									<img src={item.playerImage} alt="Image" className="img-responsive" />
+									<img src={item?.playerImage} alt="Image" className="img-responsive" />
 									<img
 										src={squadGbBottom.src}
 										alt="Image"
@@ -318,29 +321,29 @@ export default function Squad() {
 								</div>
 								<div className={`${styles.jerseyMatch}`}>
 									<div className={`${styles.jersey}`}>
-										{item.designation && (
+										{item?.designation && (
 											<div className={`${styles.position} color_white`}>
-												{item.designation}
+												{item?.designation}
 											</div>
 										)}
-										{!item.designation && <div className="pb_40"></div>}
+										{!item?.designation && <div className="pb_40"></div>}
 
 										<h5>Jersey no.</h5>
-										<div className={`${styles.number}`}>{item.jerseyNo}</div>
+										<div className={`${styles.number}`}>{item?.jerseyNo}</div>
 									</div>
 									<div className={`${styles.match}`}>
 										<h4 className={`${styles.matchs}`}>Matches</h4>
-										<h5 className={`${styles.matchsDtails}`}>{item.totalMatches}</h5>
+										<h5 className={`${styles.matchsDtails}`}>{item?.totalMatches}</h5>
 										<h4 className={`${styles.matchs}`}>Runs</h4>
-										<h5 className={`${styles.matchsDtails}`}>{item.totalRuns}</h5>
-										{item.totalWicket && (
+										<h5 className={`${styles.matchsDtails}`}>{item?.totalRuns}</h5>
+										{item?.totalWicket && (
 											<>
 												<h4 className={`${styles.matchs}`}>Wicket</h4>
-												<h5 className={`${styles.matchsDtails}`}>{item.totalWicket}</h5>
+												<h5 className={`${styles.matchsDtails}`}>{item?.totalWicket}</h5>
 											</>
 										)}
 										<h4 className={`${styles.matchs}`}>Average</h4>
-										<h5 className={`${styles.matchsDtails}`}>{item.totlaAverage}</h5>
+										<h5 className={`${styles.matchsDtails}`}>{item?.totlaAverage}</h5>
 									</div>
 								</div>
 							</div>

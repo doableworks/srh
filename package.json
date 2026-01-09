@@ -16,18 +16,18 @@
 		"commander": "^13.1.0",
 		"fs-extra": "^11.3.0",
 		"html-react-parser": "^5.2.5",
-		"next": "15.3.6",
+		"next": "^15.3.6",
 		"path": "^0.12.7",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
 		"react-hook-form": "^7.56.3",
+		"react-scroll": "^1.9.3",
+		"react-slick": "^0.31.0",
 		"resend": "^4.5.1",
 		"sass": "^1.89.0",
 		"scroll-out": "^2.2.12",
 		"sharp": "^0.34.2",
-    	"react-scroll": "^1.9.3",
-		"react-slick": "^0.31.0",
-    	"slick-carousel": "^1.8.1"
+		"slick-carousel": "^1.8.1"
 	},
 	"devDependencies": {
 		"@types/node": "^22.15.18 ",

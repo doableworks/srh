@@ -19,15 +19,13 @@ import styles from "@/styles/pages/error.module.scss";
 // DATA //
 
 // METADATA //
-export const metadata = {
-	title: "Error!",
-	description: "Error Occured",
-};
+// export const metadata = {
+// 	title: "Error!",
+// 	description: "Error Occured",
+// };
 
 /** Error */
-export default function Error({ error, reset }) {
-	console.log(error);
-
+export default function Error({ error }) {
 	return (
 		<main className={styles.error_page}>
 			<div className={styles.error_wrap}>

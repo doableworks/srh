@@ -42,9 +42,9 @@ export default function HomePage() {
 					<MatchCenter />
 				</div>
 				<MatchNews />
-				{/* <div id="squad">
+				<div id="squad">
 					<Squad />
-				</div> */}
+				</div>
 				<div id="fixtures">
 					<Fixtures />
 				</div>
