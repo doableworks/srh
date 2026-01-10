@@ -26,6 +26,19 @@ import liam from "@/../public/img/home/liam.png";
 import hannam from "@/../public/img/home/hannam.png";
 import squadBG from "@/../public/img/home/squadBG.png";
 
+// Men
+import HarryBrook from "@/../public/img/squad/HarryBrook.png";
+import BrydonCarse from "@/../public/img/squad/BrydonCarse.png";
+import MitchellMarsh from "@/../public/img/squad/MitchellMarsh.png";
+import NathanEllis from "@/../public/img/squad/NathanEllis.png";
+import DanielVettori from "@/../public/img/squad/DanielVettori.png";
+
+// Women
+import KateCross from "@/../public/img/squad/KateCross.png";
+import PhoebeLitchfield from "@/../public/img/squad/PhoebeLitchfield.png";
+import AnnabelSutherland from "@/../public/img/squad/AnnabelSutherland.png";
+import AdrianBirrell from "@/../public/img/squad/AdrianBirrell.png";
+
 // DATA //
 
 /** Squad Section */
@@ -74,89 +87,96 @@ export default function Squad() {
 	const playersData = [
 		{
 			id: 1,
-			playerName: "Liam <br> Livingstone",
-			playerImage: liam.src,
-			jerseyNo: "17",
-			designation: "c",
-			totalMatches: 10,
-			totalRuns: "333",
+			playerName: "Harry <br> Brook",
+			playerImage: HarryBrook.src,
+			jerseyNo: "88",
+			designation: "",
+			totalMatches: "35",
+			totalRuns: "902",
 			totalWicket: "",
-			totlaAverage: "71.36",
+			totlaAverage: "37.58",
+			bbi: "",
 			men: true,
 			women: false,
-			coachingStaff: true,
-			year: "2025",
+			coachingStaff: false,
+			year: "2026",
 		},
 		{
 			id: 2,
-			playerName: "Ellyse <br> Perry",
-			playerImage: liam.src,
-			jerseyNo: "09",
-			designation: "w",
-			totalMatches: 10,
-			totalRuns: "333",
-			totalWicket: "",
-			totlaAverage: "71.36",
+			playerName: "Brydon <br> Carse",
+			playerImage: BrydonCarse.src,
+			jerseyNo: "92",
+			designation: "",
+			totalMatches: "13",
+			totalRuns: "83",
+			totalWicket: "5",
+			totlaAverage: "",
+			bbi: "",
 			men: true,
 			women: false,
-			year: "2025",
+			year: "2026",
 			coachingStaff: false,
 		},
 		{
 			id: 3,
-			playerName: "Aneurin <br> Donald",
-			playerImage: liam.src,
-			jerseyNo: "77",
-			designation: "c",
-			totalMatches: 10,
-			totalRuns: "333",
+			playerName: "Mitchell <br> Marsh",
+			playerImage: MitchellMarsh.src,
+			jerseyNo: "8",
+			designation: "",
+			totalMatches: "",
+			totalRuns: "",
 			totalWicket: "",
-			totlaAverage: "71.36",
+			totlaAverage: "",
+			bbi: "",
 			men: true,
 			women: false,
-			year: "2025",
+			year: "2026",
 			coachingStaff: false,
 		},
 		{
 			id: 4,
-			playerName: "Hannah <br> Baker",
-			playerImage: liam.src,
-			jerseyNo: "21",
-			designation: "c",
-			totalMatches: 10,
-			totalRuns: "333",
-			totalWicket: "",
-			totlaAverage: "71.36",
+			playerName: "Nathan <br> Ellis",
+			playerImage: NathanEllis.src,
+			jerseyNo: "12",
+			designation: "",
+			totalMatches: "22",
+			totalRuns: "",
+			totalWicket: "181",
+			totlaAverage: "",
+			bbi: "3/16",
 			men: true,
 			women: false,
-			coachingStaff: true,
-			year: "2025",
+			coachingStaff: false,
+			year: "2026",
 		},
 		{
 			id: 5,
-			playerName: "Trent <br> Boult",
-			playerImage: liam.src,
-			jerseyNo: "11",
-			designation: "c",
-			totalMatches: 10,
-			totalRuns: "333",
+			playerName: "Daniel <br> Vettori",
+			playerImage: DanielVettori.src,
+			jerseyNo: "",
+			designation: "",
+			totalMatches: "",
+			totalRuns: "",
 			totalWicket: "",
-			totlaAverage: "71.36",
-			men: true,
+			totlaAverage: "",
+			bbi: "",
+			men: false,
 			women: false,
-			year: "2025",
-			coachingStaff: false,
+			year: "2026",
+			coachingStaff: true,
 		},
+
 		{
 			id: 1,
-			playerName: "Liam <br> Livingstone",
-			playerImage: hannam.src,
-			jerseyNo: "17",
-			designation: "c",
-			totalMatches: 10,
-			totalRuns: "333",
-			totalWicket: "",
-			totlaAverage: "71.36",
+			playerName: "Kate <br> Cross",
+			playerImage: KateCross.src,
+			jerseyNo: "16",
+			designation: "",
+			totalMatches: "40",
+			totalRuns: "",
+			totalWicket: "50",
+			totlaAverage: "",
+			bbi: "4/20",
 			men: false,
 			women: true,
 			year: "2026",
@@ -164,14 +184,15 @@ export default function Squad() {
 		},
 		{
 			id: 2,
-			playerName: "Ellyse <br> Perry",
-			playerImage: hannam.src,
-			jerseyNo: "09",
-			designation: "w",
-			totalMatches: 10,
-			totalRuns: "333",
+			playerName: "Phoebe <br> Litchfield",
+			playerImage: PhoebeLitchfield.src,
+			jerseyNo: "18",
+			designation: "",
+			totalMatches: "27",
+			totalRuns: "742",
 			totalWicket: "",
-			totlaAverage: "71.36",
+			totlaAverage: "33.72",
+			bbi: "",
 			men: false,
 			women: true,
 			year: "2026",
@@ -179,47 +200,34 @@ export default function Squad() {
 		},
 		{
 			id: 3,
-			playerName: "Aneurin <br> Donald",
-			playerImage: hannam.src,
-			jerseyNo: "77",
-			designation: "c",
-			totalMatches: 10,
-			totalRuns: "333",
-			totalWicket: "",
-			totlaAverage: "71.36",
+			playerName: "Annabel <br> Suther land",
+			playerImage: AnnabelSutherland.src,
+			jerseyNo: "14",
+			designation: "",
+			totalMatches: "23",
+			totalRuns: "",
+			totalWicket: "30",
+			totlaAverage: "",
+			bbi: "4/11",
 			men: false,
 			women: true,
-			coachingStaff: true,
+			coachingStaff: false,
 			year: "2026",
 		},
 		{
 			id: 4,
-			playerName: "Hannah <br> Baker",
-			playerImage: hannam.src,
-			jerseyNo: "21",
-			designation: "c",
-			totalMatches: 10,
-			totalRuns: "333",
+			playerName: "Adrian <br> Birrell",
+			playerImage: AdrianBirrell.src,
+			jerseyNo: "",
+			designation: "",
+			totalMatches: "",
+			totalRuns: "",
 			totalWicket: "",
-			totlaAverage: "71.36",
+			totlaAverage: "",
+			bbi: "",
 			men: false,
-			women: true,
+			women: false,
 			year: "2026",
-			coachingStaff: false,
-		},
-		{
-			id: 5,
-			playerName: "Trent <br> Boult",
-			playerImage: hannam.src,
-			jerseyNo: "11",
-			designation: "c",
-			totalMatches: 10,
-			totalRuns: "333",
-			totalWicket: "",
-			totlaAverage: "71.36",
-			men: false,
-			women: true,
-			year: "2024",
 			coachingStaff: true,
 		},
 	];
@@ -305,7 +313,6 @@ export default function Squad() {
 							value={yearFilter}
 							onChange={(e) => setYearFilter(e.target.value)}
 						>
-							<option value="">All Years Squad</option>
 							{years?.map((year, i) => (
 								<option key={i} value={year}>
 									{year} Squad
@@ -351,22 +358,44 @@ export default function Squad() {
 										)}
 										{!item?.designation && <div className="pb_40"></div>}
 
-										<h5>Jersey no.</h5>
-										<div className={`${styles.number}`}>{item?.jerseyNo}</div>
+										{item?.jerseyNo && (
+											<>
+												<h5>Jersey no.</h5>
+												<div className={`${styles.number}`}>{item?.jerseyNo}</div>
+											</>
+										)}
 									</div>
 									<div className={`${styles.match}`}>
-										<h4 className={`${styles.matchs}`}>Matches</h4>
-										<h5 className={`${styles.matchsDtails}`}>{item?.totalMatches}</h5>
-										<h4 className={`${styles.matchs}`}>Runs</h4>
-										<h5 className={`${styles.matchsDtails}`}>{item?.totalRuns}</h5>
+										{item?.totalMatches && (
+											<>
+												<h4 className={`${styles.matchs}`}>Matches</h4>
+												<h5 className={`${styles.matchsDtails}`}>{item?.totalMatches}</h5>
+											</>
+										)}
+										{item?.totalRuns && (
+											<>
+												<h4 className={`${styles.matchs}`}>Runs</h4>
+												<h5 className={`${styles.matchsDtails}`}>{item?.totalRuns}</h5>
+											</>
+										)}
 										{item?.totalWicket && (
 											<>
 												<h4 className={`${styles.matchs}`}>Wicket</h4>
 												<h5 className={`${styles.matchsDtails}`}>{item?.totalWicket}</h5>
 											</>
 										)}
-										<h4 className={`${styles.matchs}`}>Average</h4>
-										<h5 className={`${styles.matchsDtails}`}>{item?.totlaAverage}</h5>
+										{item?.totlaAverage && (
+											<>
+												<h4 className={`${styles.matchs}`}>Average</h4>
+												<h5 className={`${styles.matchsDtails}`}>{item?.totlaAverage}</h5>
+											</>
+										)}
+										{item?.bbi && (
+											<>
+												<h4 className={`${styles.matchs}`}>BBI</h4>
+												<h5 className={`${styles.matchsDtails}`}>{item?.bbi}</h5>
+											</>
+										)}
 									</div>
 								</div>
 							</div>
