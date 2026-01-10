@@ -15,7 +15,7 @@ import { useForm } from "react-hook-form";
 import styles from "./Footer.module.scss";
 
 // IMAGES //
-import Logo from "@/../public/img/home/footerLogo.svg";
+import Logo from "@/../public/img/logo.svg";
 import facebook from "@/../public/img/home/facebook.png";
 import tw from "@/../public/img/home/tw.png";
 import you from "@/../public/img/home/you.png";
@@ -149,7 +149,7 @@ export default function Footer() {
 							</li>
 						</ul>
 					</div> */}
-					<p>Made by Doable Works</p>
+					<p className={`${styles.doable}`}>Made by Doable Works</p>
 				</div>
 			</div>
 		</footer>

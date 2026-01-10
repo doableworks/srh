@@ -42,6 +42,10 @@ mix-blend-mode: overlay;
             display: inline-block;
             background-color: var(--color_primary_tint);
             border: 1px solid var(--color_primary_light);
+            @media screen and (max-width: 767px) {
+                overflow-x: scroll;
+                white-space: nowrap;
+            }
             ul{
                 list-style: none;
                 display: flex;
@@ -57,7 +61,7 @@ mix-blend-mode: overlay;
                     padding: 10px 30px 7px 30px;
 	                transition: 0.3s ease-in-out;
                     @media screen and (max-width: 767px) {
-                        padding: 8px 20px 5px 20px;
+                        padding: 10px 20px 7px 20px;
                     }
                     &.active{
                         border-radius: 6px;

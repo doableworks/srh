@@ -105,7 +105,7 @@ export default function Header() {
 								Fixtures
 							</ScrollSection>
 						</div>
-						<div className={`${styles.links} visible_md`}>
+						<div className={`${styles.links} visible_xs`}>
 							<ScrollSection
 								activeClass={styles.active}
 								to="standings"
@@ -119,7 +119,7 @@ export default function Header() {
 								Standings
 							</ScrollSection>
 						</div>
-						<div className={`${styles.links} visible_md`}>
+						<div className={`${styles.links} visible_xs`}>
 							<ScrollSection
 								activeClass={styles.active}
 								to="fanZone"
@@ -133,7 +133,7 @@ export default function Header() {
 								Fan zone
 							</ScrollSection>
 						</div>
-						<div className={`${styles.links} visible_md`}>
+						<div className={`${styles.links} visible_xs`}>
 							<ScrollSection
 								activeClass={styles.active}
 								to="spotlight"

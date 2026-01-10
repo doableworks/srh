@@ -3,6 +3,7 @@
 // COMPONENTS //
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
+import ScrollToTop from "@/components/scrollToTop/ScrollToTop";
 import FanZone from "@/sections/fanZone/FanZone";
 import Fixtures from "@/sections/fixtures/Fixtures";
 import MatchCenter from "@/sections/matchCenter/MatchCenter";
@@ -34,7 +35,7 @@ export default function HomePage() {
 		<div>
 			{/* Header */}
 			<Header />
-
+			<ScrollToTop />
 			{/* Page Content starts here */}
 			<main className={`${styles.HomePage}`}>
 				<TopBanner />
