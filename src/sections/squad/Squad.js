@@ -96,6 +96,7 @@ export default function Squad() {
 			totalWicket: "",
 			totlaAverage: "37.58",
 			bbi: "",
+			couchHead: "",
 			men: true,
 			women: false,
 			coachingStaff: false,
@@ -112,6 +113,7 @@ export default function Squad() {
 			totalWicket: "5",
 			totlaAverage: "",
 			bbi: "",
+			couchHead: "",
 			men: true,
 			women: false,
 			year: "2026",
@@ -123,11 +125,12 @@ export default function Squad() {
 			playerImage: MitchellMarsh.src,
 			jerseyNo: "8",
 			designation: "",
-			totalMatches: "",
-			totalRuns: "",
+			totalMatches: "Debut",
+			totalRuns: "Debut",
 			totalWicket: "",
-			totlaAverage: "",
+			totlaAverage: "Debut",
 			bbi: "",
+			couchHead: "",
 			men: true,
 			women: false,
 			year: "2026",
@@ -144,6 +147,7 @@ export default function Squad() {
 			totalWicket: "181",
 			totlaAverage: "",
 			bbi: "3/16",
+			couchHead: "",
 			men: true,
 			women: false,
 			coachingStaff: false,
@@ -160,6 +164,7 @@ export default function Squad() {
 			totalWicket: "",
 			totlaAverage: "",
 			bbi: "",
+			couchHead: "Men’s <br/> Head Coach",
 			men: false,
 			women: false,
 			year: "2026",
@@ -177,6 +182,7 @@ export default function Squad() {
 			totalWicket: "50",
 			totlaAverage: "",
 			bbi: "4/20",
+			couchHead: "",
 			men: false,
 			women: true,
 			year: "2026",
@@ -193,6 +199,7 @@ export default function Squad() {
 			totalWicket: "",
 			totlaAverage: "33.72",
 			bbi: "",
+			couchHead: "",
 			men: false,
 			women: true,
 			year: "2026",
@@ -209,6 +216,7 @@ export default function Squad() {
 			totalWicket: "30",
 			totlaAverage: "",
 			bbi: "4/11",
+			couchHead: "",
 			men: false,
 			women: true,
 			coachingStaff: false,
@@ -225,6 +233,7 @@ export default function Squad() {
 			totalWicket: "",
 			totlaAverage: "",
 			bbi: "",
+			couchHead: "Women’s <br/> Head Coach",
 			men: false,
 			women: false,
 			year: "2026",
@@ -349,6 +358,7 @@ export default function Squad() {
 										className={`${styles.squadGbBottom} img-responsive`}
 									/>
 								</div>
+								<div className={`${styles.couchHead}`}>{parse(item.couchHead)}</div>
 								<div className={`${styles.jerseyMatch}`}>
 									<div className={`${styles.jersey}`}>
 										{item?.designation && (
@@ -405,7 +415,11 @@ export default function Squad() {
 			</Slider>
 
 			<div className="pt_70 text_center fadeInUp" data-scroll>
-				<a href="" className="primaryBtn">
+				<a
+					href=""
+					className="primaryBtn disabled"
+					onClick={(e) => e.preventDefault()}
+				>
 					Rising Squad
 				</a>
 			</div>

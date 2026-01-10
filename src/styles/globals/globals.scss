@@ -136,6 +136,11 @@ section {
 	}
 }
 
+.disabled {
+	pointer-events: none;
+	opacity: 0.5;
+	cursor: not-allowed;
+}
 .sectionTitle{
 	font-size: 116.845px;
 	font-style: normal;
